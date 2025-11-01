@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+  background-color: #fff; /* Fondo blanco */
+  color: #000; /* Texto negro */
+  font-family: sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header, main, footer {
+  padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc; /* Un borde gris claro */
+}
+
+/* Estilos de la sección de audios */
+#audios .audio-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc; /* Un borde gris claro */
+  padding-bottom: 20px;
+}
+
+#audios .audio-container img {
+  width: 80px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+/* Estilos de la biblioteca */
+#biblioteca ul {
+  list-style: none;
+  padding: 0;
+}
+
+#biblioteca li {
+  margin-bottom: 10px;
+}
+
+#biblioteca a {
+  color: #007bff; /* Azul para los enlaces */
+  text-decoration: none;
+}
+
+#biblioteca a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos del pie de página */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #ccc; /* Un borde gris claro */
+  font-size: 0.8em;
+}
+
+/* Media Queries (Responsividad) */
+@media (max-width: 768px) {
+  #audios .audio-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #audios .audio-container img {
+    width: 60px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
